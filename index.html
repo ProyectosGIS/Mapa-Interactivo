@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa Interactivo</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDazFtVh5uPdDmoymvfEGaPB6-rVZ-mAlw&callback=initMap"
+        async
+        defer
+    ></script>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 42.6334, lng: -71.3162 }, // Coordenadas de Lowell, MA
+                zoom: 13
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="map" style="height: 100vh; width: 100%;"></div>
+</body>
+</html>
+
